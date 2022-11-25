@@ -1,0 +1,558 @@
+// This file allows you to override default styles in one central location for easier upgrade and maintenance.
+@import "./hepza/owlcarousel/owl.carousel.min.css";
+@import "./hepza/owlcarousel/owl.theme.default.min.css";
+
+.autofit-col .autofit-col-expand h2 {
+    display: none;
+}
+
+.col {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/* NAV MENU */
+.hmenu {
+    background-color: #ef0000;
+}
+
+.hmenu ul li:hover {
+    background-color: #d40000;
+}
+
+.hmenu .nav-link {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hmenu .dropdown .dropdown-menu {
+    margin-top: -1px;
+}
+
+
+.hmenu .dropdown .dropdown-menu a {
+    background-color: #d40000;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.hmenu .dropdown .dropdown-menu a:hover {
+    background-color: rgb(17, 15, 15);
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+// .dropdown>.dropdown-toggle:active {
+//     /*Without this, clicking will make it sticky*/
+//     pointer-events: none;
+// }
+
+// .menu-icon {
+//     line-height: 60px;
+//     width: 100%;
+//     background: #000;
+//     text-align: right;
+//     box-sizing: border-box;
+//     padding: 15px 24px;
+//     cursor: pointer;
+//     color: #fff;
+//     display: none;
+// }
+
+// .showing {
+//     max-height: 34em;
+// }
+
+// .black  {
+//     background: #000;
+// }
+/* Header */
+.hheader p {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: bold;
+    color: blue;
+    align-items: center;
+    margin: 0;
+}
+
+.hheader .div-logo .right .login-btn {
+    margin-left: 20px;
+    padding-left: 16px;
+    padding: 24px;
+    width: 130px;
+    height: 40px;
+}
+
+.hheader .login-btn .login-btn-a {
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    background: red;
+    box-shadow: 0px 0px 5px rgb(238 66 70 / 15%);
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 18px;
+    padding-left: 18px;
+    text-decoration: none;
+}
+
+.hbanner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hbanner img {
+    height: 30%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hbanner .text-on-banner {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background: rgba(4, 41, 161, 0.6);
+    line-height: 0.6;
+}
+
+
+footer .background-bottom {
+    background-color: #004196;
+}
+
+footer .background {
+    background-color: #c2dcff;
+}
+
+footer .background-top {
+    font-size: 14px;
+    font-weight: bold;
+    color: #004196;
+    line-height: 1;
+}
+
+footer .background-bottom P {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    align-self: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+footer .footer-top li a {
+    color: #004196;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-left: 1px solid #004196;
+}
+
+footer .footer-top li {
+    list-style-type: none;
+}
+
+footer .footer-top li:first-child a {
+    padding-left: 0;
+    border-left-width: 0;
+}
+
+/* Sidebar */
+// * {
+//     margin: 0;
+//     padding: 0;
+//     -webkit-box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     box-sizing: border-box;
+// }
+
+// body {
+//     background: #2d2c41;
+//     font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+// }
+
+// ul {
+//     list-style-type: none;
+// }
+
+// a {
+//     color: #b63b4d;
+//     text-decoration: none;
+// }
+/** =======================
+ * Contenedor Principal - Chuyen muc
+ ===========================*/
+
+ .accordion {
+    width: 100%;
+    background: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 15px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: blue;
+}
+
+.accordion li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: white;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordion li.open .link {
+    color: white;
+}
+
+.accordion li.open i {
+    color: white;
+}
+
+.accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.accordion li.default .submenu {
+    display: block;
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+.submenu {
+    display: none;
+    background: black;
+    font-size: 14px;
+}
+
+.submenu li {
+    /* some thing */
+}
+
+.submenu a {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: #d9d9d9;
+    padding-left: 42px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.submenu a:hover {
+    background: gray;
+    color: #FFF;
+}
+
+.hside-bar .title {
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(62, 62, 223, 1) 100%);
+    color: white;
+}
+
+.hside-bar ul {
+    padding: 0px;
+}
+
+.hside-bar ul li {
+    list-style-type: none;
+}
+
+.hside-bar .title p {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Middle banner news */
+.hbanner-news .background-title {
+    text-align: center;
+    color: white;
+    margin-top: 6px;
+}
+
+.hbanner-news .text-on-banner {
+    bottom: 0px;
+    line-height: 0.6;
+    align-self: center;
+}
+
+.hbanner-news .date-time {
+    font-size: 12px;
+    color: gray;
+    font-weight: bold;
+}
+
+.hbanner-news .content-background {
+    padding: ($spacer * .5) !important;
+    background-color: #eef7ff;
+    color: black;
+    font-weight: bold;
+}
+
+.hbanner-news .content-background .title {
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: bold;
+}
+
+.hbanner-news .content-background .content {
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: normal;
+}
+
+/* H-News */
+.hpage-title-bg {
+    float: left;
+    width: 100%;
+    margin: 8px 0px 0px 0px;
+    padding: 0;
+    height: 41px;
+    background-color: #ef0000;
+}
+
+.hpage-title-header {
+    float: left;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    margin-left: 40%;
+}
+
+.page-title {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    position: relative;
+}
+
+.page-title-bg {
+    float: left;
+    width: 100%;
+    margin: 8px 0px 0px 0px;
+    padding: 0;
+    height: 41px;
+    background-color: #004aa8;
+}
+
+.group-page-text {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.page-title-header {
+    float: left;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.page-title-middle {
+    float: left;
+    width: auto;
+    height: 53px;
+    margin: 0;
+    padding: 18px 0px 12px 0px;
+    font: bold 16px Arial;
+    text-transform: uppercase;
+    color: White;
+    background-image: url('../images/bg-title-middle.png');
+    background-repeat: repeat-x;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(255, 51, 51, 1) 0%, rgba(203, 0, 0, 1) 100%);
+}
+
+.page-title-end {
+    float: left;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.page-title-img {
+    float: left;
+    width: 100%;
+    margin: 0px;
+}
+
+.hnews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: ($spacer * .5) !important;
+}
+
+
+.hnews .hnews-item {
+    flex: 30%;
+}
+
+.hnews .date-time {
+    font-size: 12px;
+    color: #8f8f8f;
+    font-weight: bold;
+}
+
+.hnews .content-background {
+    padding: ($spacer * .5) !important;
+    background-color: #eef7ff;
+    color: black;
+    font-weight: bold;
+    border-top: solid #9ac2e5 2px;
+}
+
+.hnews .content-background .title {
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: bold;
+}
+
+.hnews .content-background .content {
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: normal;
+}
+
+
+// footer .background-bottom{
+//     background-color: blue;
+// }
+
+// footer .background{
+//     background-color: cornflowerblue;
+// }
+
+// footer .background-bottom P{
+//     color: white;
+//     font-size: 12px;
+//     text-align: center;
+//     align-self: center;
+//     padding-top: 5px;
+//     padding-bottom: 5px;
+//     margin: 0;
+// }
+
+/* Responsive */
+@media(max-width: 786px) {
+    .hmenu .nav-item {
+        max-height: 0px;
+        background: #000;
+    }
+
+    nav.black ul {
+        background: #000;
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav .address {
+        display: none;
+    }
+
+    .hnews .hnews-item {
+        flex: 45%;
+    }
+}
