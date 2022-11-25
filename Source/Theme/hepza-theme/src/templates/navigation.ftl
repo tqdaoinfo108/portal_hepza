@@ -1,9 +1,9 @@
-<section class="hmenu pr-5 pl-5">
+<section class="hmenu pr-7 pl-7">
 	<ul class="nav justify-content-between">
 		<#list nav_items as nav_item>
 			<#if nav_item.hasChildren()>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="${nav_item.getURL()}" id="navbarDropdown" role="button" data-toggle="dropdown"
+					<a class="nav-link dropdown-toggle text-uppercase" href="${nav_item.getURL()}" id="navbarDropdown" role="button" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false">
 						${nav_item.getName()}
 					</a>
@@ -15,7 +15,7 @@
 				</li>
 			<#else>
 				<li class="nav-item">
-					<a class="nav-link " href="${nav_item.getURL()}">${nav_item.getName()}</a>
+					<a class="nav-link text-uppercase" href="${nav_item.getURL()}">${nav_item.getName()}</a>
 				</li>
 			</#if>
 		</#list>

@@ -15,6 +15,9 @@
     padding: 0;
     margin: 0;
 }
+.portlet{
+    margin-bottom: 0px;
+}
 
 body {
     margin: 0px;
@@ -35,6 +38,8 @@ body {
     font-size: 16px;
     color: #fff;
     font-weight: bold;
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
 }
 
 .hmenu .dropdown .dropdown-menu {
@@ -82,11 +87,21 @@ body {
 //     background: #000;
 // }
 /* Header */
+.hheader{
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+}
+
+.navbar-brand{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 .hheader p {
-    font-size: 14px;
-    line-height: 1;
+    font-size: 12px;
+    line-height: 0.7;
     font-weight: bold;
-    color: blue;
+    color: #004aa8;
     align-items: center;
     margin: 0;
 }
@@ -97,6 +112,7 @@ body {
     padding: 24px;
     width: 130px;
     height: 40px;
+    margin-left: 12px;
 }
 
 .hheader .login-btn .login-btn-a {
@@ -121,12 +137,6 @@ body {
     color: white;
 }
 
-.hbanner img {
-    height: 30%;
-    width: 100%;
-    object-fit: cover;
-}
-
 .hbanner .text-on-banner {
     position: absolute;
     width: 100%;
@@ -135,6 +145,10 @@ body {
     line-height: 0.6;
 }
 
+.user-avatar-link
+{
+    display: inline-flex;
+}
 
 footer .background-bottom {
     background-color: #004196;
@@ -300,6 +314,7 @@ footer .footer-top li:first-child a {
 .hside-bar .title {
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(62, 62, 223, 1) 100%);
     color: white;
+    height: 28px;
 }
 
 .hside-bar ul {
@@ -338,7 +353,7 @@ footer .footer-top li:first-child a {
 
 .hbanner-news .content-background {
     padding: ($spacer * .5) !important;
-    background-color: #eef7ff;
+    background-color: #91caff;
     color: black;
     font-weight: bold;
 }
@@ -377,7 +392,7 @@ footer .footer-top li:first-child a {
     width: 100%;
     margin: 8px 0px 0px 0px;
     padding: 0;
-    height: 41px;
+    height: 28px;
     background-color: #ef0000;
 }
 
@@ -424,9 +439,10 @@ footer .footer-top li:first-child a {
 .page-title-middle {
     float: left;
     width: auto;
-    height: 53px;
+    height: 42px;
     margin: 0;
-    padding: 18px 0px 12px 0px;
+    margin-top: 1px;
+    padding: 12px 0px 12px 0px;
     font: bold 16px Arial;
     text-transform: uppercase;
     color: White;
@@ -447,6 +463,8 @@ footer .footer-top li:first-child a {
     float: left;
     width: 100%;
     margin: 0px;
+    height: 42px;
+    margin-top: 1px
 }
 
 .hnews {
@@ -523,7 +541,7 @@ footer .footer-top li:first-child a {
 // }
 
 /* Responsive */
-@media(max-width: 786px) {
+@media(max-width: 768px) {
     .hmenu .nav-item {
         max-height: 0px;
         background: #000;
@@ -554,5 +572,35 @@ footer .footer-top li:first-child a {
 
     .hnews .hnews-item {
         flex: 45%;
+    }
+
+    .hheader{
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+    
+    .sub-title-navbrand{
+        white-space: normal;
+        line-height: 1.5;
+    }
+
+    .nav-right {
+        flex-wrap: wrap;
+        justify-content : space-between;
+    }
+
+    .login-btn{
+        padding: 0;
+    }
+
+    .navbar-brand{
+        max-width: 100%;
+    }
+
+    .hheader .div-logo .right .login-btn {
+        margin-left: 0px;
+    }
+    .hpage-title-header{
+        margin-left: 5%;
     }
 }

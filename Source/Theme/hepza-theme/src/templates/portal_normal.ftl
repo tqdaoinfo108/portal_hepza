@@ -20,48 +20,47 @@
 </head>
 
 <body class="${css_class}">
-
 	<@liferay_ui["quick-access"] contentId="#main-content" />
 
 	<@liferay_util["include"] page=body_top_include />
 
 	<@liferay.control_menu />
 
-	<#assign preferences=freeMarkerPortletPreferences.getPreferences({"portletSetupPortletDecoratorId": "barebone", "destination" : "/search" }) />
-
+	<#assign preferences=freeMarkerPortletPreferences.getPreferences({"portletSetupPortletDecoratorId": "barebone"
+		, "destination" : "/search" }) />
 	<div class="container-full position-relative" id="wrapper">
 		<header id="banner" role="banner">
-			<nav class="hheader navbar align-content-between bg-light pr-5 pl-5 m-0">
+			<nav class="hheader navbar align-content-between bg-light m-0 p-0 pt-1 pb-1">
 				<a class="navbar-brand" href="/index">
 					<div class="d-flex flex-row align-content-between ">
-						<img src="${site_logo}" width="48px" alt="" />
+						<img src="${site_logo}" width="64px" alt=""class="pr-3" />
 						<div class="d-flex flex-column align-self-center">
 							<p class="pb-2">CỔNG THÔNG TIN ĐIỆN TỬ</p>
-							<p>BAN QUẢN LÝ KHU CHẾ XUẤT & CÔNG NGHIỆP TP.HCM</p>
+							<p class="sub-title-navbrand">BAN QUẢN LÝ KHU CHẾ XUẤT & CÔNG NGHIỆP TP.HCM</p>
 						</div>
 					</div>
 				</a>
 
-				<div class="d-flex flex-row align-items-center m-0 ">
+				<div class="d-flex flex-row m-0 nav-right">
 					<!-- tìm kiếm -->
-					<div class="autofit-col pr-3">
+					<div class="autofit-col pr-5">
 						<@liferay.search_bar default_preferences="${preferences}" />
 					</div>
-					
-					<div class="address pr-3">
+
+					<div class="address pr-4">
 						<div class="d-flex flex-row">
-							<div class="d-flex flex-row">
+							<div class="d-flex flex-row align-items-center">
 								<img width="16px" height="16px"
 									src="${themeDisplay.getPathThemeImages()}/hepza/icon-phone.png" alt="" srcset="">
 								<p class="pl-2">84-28.38290.414 - 38290.405</p>
 							</div>
-							<div class="d-flex flex-row align-content-center pl-3">
+							<div class="d-flex flex-row align-items-center pl-3">
 								<img width="16px" height="16px"
 									src="${themeDisplay.getPathThemeImages()}/hepza/icon-mail.png" alt="" srcset="">
 								<p class="pl-2">hepza@tphcm.gov.vn</p>
 							</div>
 						</div>
-						<div class="d-flex flex-row pt-2">
+						<div class="d-flex flex-row align-items-center pt-1">
 							<img width="16px" height="16px"
 								src="${themeDisplay.getPathThemeImages()}/hepza/icon-gps.png" alt="" srcset="">
 							<p class="pl-2 ">35 Nguyễn Bỉnh Khiêm,Quận 1,TP-HCM,Việt Nam</p>
@@ -70,12 +69,12 @@
 
 					<div class="autofit-col pr-3">
 						<@liferay_portlet["runtime"] defaultPreferences="${freeMarkerPortletPreferences}"
-						portletProviderAction=portletProviderAction.VIEW
-						portletProviderClassName="com.liferay.portal.kernel.servlet.taglib.ui.LanguageEntry" />
+							portletProviderAction=portletProviderAction.VIEW
+							portletProviderClassName="com.liferay.portal.kernel.servlet.taglib.ui.LanguageEntry" />
 					</div>
-					
+
 					<#if !is_signed_in>
-						<div class="login-btn pl-4">
+						<div class="login-btn">
 							<a data-redirect="${is_login_redirect_required?string}" class="login-btn-a"
 								href="/web/guest/trang-chu?p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName=%2Flogin%2Flogin&saveLastPath=false"
 								id="sign-in" rel="nofollow">${sign_in_text}
@@ -89,7 +88,7 @@
 
 				</div>
 			</nav>
-			
+
 			<#if has_navigation && is_setup_complete>
 				<#include "${full_templates_path}/navigation.ftl" />
 			</#if>
@@ -107,7 +106,7 @@
 
 					<@liferay_theme["wrap-portlet"] page="portlet.ftl">
 						<@liferay_util["include"] page=content_include />
-					</@>
+						</@>
 			</#if>
 		</section>
 
@@ -149,7 +148,5 @@
 	<@liferay_util["include"] page=body_bottom_include />
 
 	<@liferay_util["include"] page=bottom_include />
-
 </body>
-
 </html>
