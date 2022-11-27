@@ -15,7 +15,8 @@
     padding: 0;
     margin: 0;
 }
-.portlet{
+
+.portlet {
     margin-bottom: 0px;
 }
 
@@ -87,12 +88,12 @@ body {
 //     background: #000;
 // }
 /* Header */
-.hheader{
+.hheader {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
 }
 
-.navbar-brand{
+.navbar-brand {
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -145,8 +146,7 @@ body {
     line-height: 0.6;
 }
 
-.user-avatar-link
-{
+.user-avatar-link {
     display: inline-flex;
 }
 
@@ -218,7 +218,7 @@ footer .footer-top li:first-child a {
  * Contenedor Principal - Chuyen muc
  ===========================*/
 
- .accordion {
+.accordion {
     width: 100%;
     background: #FFF;
     -webkit-border-radius: 4px;
@@ -358,6 +358,13 @@ footer .footer-top li:first-child a {
     font-weight: bold;
 }
 
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
 .hbanner-news .content-background .title {
     font-size: 15px;
     overflow: hidden;
@@ -479,6 +486,11 @@ footer .footer-top li:first-child a {
     flex: 30%;
 }
 
+.hnews .hnews-item img {
+    height: 50%;
+    object-fit: cover;
+}
+
 .hnews .date-time {
     font-size: 12px;
     color: #8f8f8f;
@@ -570,37 +582,35 @@ footer .footer-top li:first-child a {
         display: none;
     }
 
-    .hnews .hnews-item {
-        flex: 45%;
-    }
 
-    .hheader{
+    .hheader {
         padding-left: 1.5rem !important;
         padding-right: 1.5rem !important;
     }
-    
-    .sub-title-navbrand{
+
+    .sub-title-navbrand {
         white-space: normal;
         line-height: 1.5;
     }
 
     .nav-right {
         flex-wrap: wrap;
-        justify-content : space-between;
+        justify-content: space-between;
     }
 
-    .login-btn{
+    .login-btn {
         padding: 0;
     }
 
-    .navbar-brand{
+    .navbar-brand {
         max-width: 100%;
     }
 
     .hheader .div-logo .right .login-btn {
         margin-left: 0px;
     }
-    .hpage-title-header{
+
+    .hpage-title-header {
         margin-left: 5%;
     }
 }
