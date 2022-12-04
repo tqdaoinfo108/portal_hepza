@@ -621,9 +621,35 @@ footer .footer-top li:first-child a {
     text-decoration: none;
 }
 
+.text-color-red {
+    color: #ef0000;
+}
+
+.text-color-blue{
+    color: #004196;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-font-size-13 {
+    font-size: 13px;
+}
+
+
+.text-font-size-14 {
+    font-size: 14px;
+}
+
+
+.text-font-size-15 {
+    font-size: 15px;
+}
+
 /* Responsive */
 @media(max-width: 768px) {
-    .owl-carousel .owl-item img{
+    .owl-carousel .owl-item img {
         height: 50vw;
     }
 
