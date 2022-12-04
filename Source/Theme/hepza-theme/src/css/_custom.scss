@@ -310,6 +310,7 @@ footer .footer-top li:first-child a {
     background-color: #91caff;
     color: black;
     font-weight: bold;
+    min-height: 10rem;
 }
 
 .owl-carousel .owl-item img {
@@ -477,6 +478,7 @@ footer .footer-top li:first-child a {
     color: black;
     font-weight: bold;
     border-top: solid #9ac2e5 2px;
+    min-height: 32%;
 }
 
 .hnews .content-background .title {
@@ -621,6 +623,10 @@ footer .footer-top li:first-child a {
 
 /* Responsive */
 @media(max-width: 768px) {
+    .owl-carousel .owl-item img{
+        height: 50vw;
+    }
+
     .hmenu .nav-item {
         max-height: 0px;
         background: #000;
