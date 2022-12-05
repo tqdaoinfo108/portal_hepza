@@ -33,7 +33,7 @@
 			<nav class="hheader navbar align-content-between bg-light m-0 p-0 pt-1 pb-1">
 				<a class="navbar-brand" href="/index">
 					<div class="d-flex flex-row align-content-between ">
-						<img src="${site_logo}" width="64px" alt=""class="pr-3" />
+						<img src="${site_logo}" width="48px" alt="" />
 						<div class="d-flex flex-column align-self-center">
 							<p class="pb-2">CỔNG THÔNG TIN ĐIỆN TỬ</p>
 							<p class="sub-title-navbrand">BAN QUẢN LÝ KHU CHẾ XUẤT & CÔNG NGHIỆP TP.HCM</p>
@@ -41,9 +41,9 @@
 					</div>
 				</a>
 
-				<div class="d-flex flex-row m-0 nav-right">
+				<div class="d-flex flex-wrap m-0 nav-right align-items-center">
 					<!-- tìm kiếm -->
-					<div class="autofit-col pr-5">
+					<div class="autofit-col search-bar">
 						<@liferay.search_bar default_preferences="${preferences}" />
 					</div>
 
@@ -67,7 +67,7 @@
 						</div>
 					</div>
 
-					<div class="autofit-col pr-3">
+					<div class="autofit-col change-language">
 						<@liferay_portlet["runtime"] defaultPreferences="${freeMarkerPortletPreferences}"
 							portletProviderAction=portletProviderAction.VIEW
 							portletProviderClassName="com.liferay.portal.kernel.servlet.taglib.ui.LanguageEntry" />
@@ -121,7 +121,7 @@
 						<li><a href="#">Văn bản pháp quy</a></li>
 						<li><a href="#">Thủ tục hành chính công</a></li>
 					</ul>
-					<div class="row mb-4 ml-5 align-items-center background-top">
+					<div class="row mb-4 align-items-center background-top">
 						<img src="${themeDisplay.getPathThemeImages()}/hepza/logo.png" class="pr-4" height="120px"
 							alt="" srcset="">
 						<div>
@@ -134,7 +134,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6 m-3"><iframe style="overflow:hidden;height:100%;width:100%" frameborder="0"
+				<div class="footer-map col-6 m-3"><iframe style="overflow:hidden;height:100%;width:100%" frameborder="0"
 						scrolling="no" marginheight="0" marginwidth="0"
 						src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=35%20Nguy%E1%BB%85n%20B%E1%BB%89nh%20Khi%C3%AAm,Qu%E1%BA%ADn%201,TP-HCM+(Khu%20Ch%E1%BA%BF%20Xu%E1%BA%A5t)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
 							href="https://www.maps.ie/distance-area-calculator.html"></a></iframe></div>

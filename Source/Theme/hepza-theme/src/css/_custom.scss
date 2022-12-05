@@ -118,7 +118,7 @@ body {
     position: absolute;
     width: 100%;
     bottom: 0px;
-    background: rgba(4, 41, 161, 0.6);
+    background: rgba(7, 67, 117, 0.7);
     line-height: 0.6;
 }
 
@@ -139,6 +139,7 @@ footer .background-top {
     font-weight: bold;
     color: #004196;
     line-height: 1;
+    margin-left: 3rem !important;
 }
 
 footer .background-bottom P {
@@ -450,20 +451,20 @@ footer .footer-top li:first-child a {
 }
 
 .hnews {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: ($spacer * .5) !important;
+    gap: ($spacer * .5) !important
 }
 
 
 .hnews .hnews-item {
     flex: 30%;
+
 }
 
 .hnews .hnews-item img {
-    height: 50%;
     object-fit: cover;
+    width: 100%;
+    height: 220px;
 }
 
 .hnews .date-time {
@@ -478,7 +479,7 @@ footer .footer-top li:first-child a {
     color: black;
     font-weight: bold;
     border-top: solid #9ac2e5 2px;
-    min-height: 32%;
+    min-height: 160px;
 }
 
 .hnews .content-background .title {
@@ -625,7 +626,7 @@ footer .footer-top li:first-child a {
     color: #ef0000;
 }
 
-.text-color-blue{
+.text-color-blue {
     color: #004196;
 }
 
@@ -647,69 +648,125 @@ footer .footer-top li:first-child a {
     font-size: 15px;
 }
 
-/* Responsive */
-@media(max-width: 768px) {
+.search-bar {
+    margin-right: 1.5rem;
+    width: 50%;
+}
+
+.change-language {
+    margin-right: 1.5rem;
+}
+
+.banner-image {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.search-bar {
+    margin-right: 1.5rem;
+    width: 25%;
+}
+
+/* Các thiết bị cực nhỏ (điện thoại, 600px trở xuống) */
+@media only screen and (max-width: 600px) {
+
+    html{
+        overflow-x: hidden;
+    }
+
     .owl-carousel .owl-item img {
         height: 50vw;
     }
 
-    .hmenu .nav-item {
-        max-height: 0px;
-        background: #000;
+    .hheader {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
     }
 
-    nav.black ul {
-        background: #000;
+    .search-bar {
+        margin-right: 0.5rem;
     }
 
-    .showing {
-        max-height: 34em;
+    .change-language {
+        margin-right: 0.5rem;
     }
 
-    nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px;
-        text-align: center;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    nav .address {
+    .address {
         display: none;
     }
 
-
-    .hheader {
-        padding-left: 1.5rem !important;
-        padding-right: 1.5rem !important;
+    .navbar-brand {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 
-    .sub-title-navbrand {
-        white-space: normal;
+    .banner-image {
+        height: 400px;
+    }
+
+    .hbanner .text-on-banner {
         line-height: 1.5;
     }
 
-    .nav-right {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
 
-    .login-btn {
-        padding: 0;
-    }
-
-    .navbar-brand {
-        max-width: 100%;
-    }
-
-    .hheader .div-logo .right .login-btn {
-        margin-left: 0px;
+    .banner-image {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
     }
 
     .hpage-title-header {
-        margin-left: 5%;
+        margin-left: 15%;
+    }
+
+    .hnews .hnews-item {
+        flex: 45%;
+    }
+
+    .hnews .content-background .title {
+        text-align: start;
+    }
+
+    .hnews .content-background .content {
+        text-align: start;
+    }
+
+    footer .background {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    footer .footer-top {
+        padding-top: 12px;
+        padding-left: 12px;
+        gap: 6px;
+    }
+
+    footer .background-top {
+        margin-left: 12px !important;
+    }
+
+    footer .background-top img:first-child {
+        margin-bottom: 6px;
+    }
+
+    footer .footer-map {
+        margin: 0;
+        padding: 0;
+        flex: 0 0 calc(100%);
+        max-width: calc(100%);
     }
 }
+
+/* Thiết bị nhỏ (máy tính bảng dọc và điện thoại lớn, 600px trở lên) */
+@media only screen and (min-width: 600px) {}
+
+/* Thiết bị trung bình (máy tính bảng ngang, 768px trở lên) */
+@media only screen and (min-width: 768px) {}
+
+/* Thiết bị lớn (máy tính xách tay / máy tính để bàn, 992px trở lên) */
+@media only screen and (min-width: 992px) {}
+
+/* Thiết bị cực lớn (máy tính xách tay và máy tính để bàn lớn, 1200px trở lên) */
+@media only screen and (min-width: 1200px) {}
