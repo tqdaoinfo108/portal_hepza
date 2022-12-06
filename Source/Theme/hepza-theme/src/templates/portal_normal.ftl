@@ -26,8 +26,7 @@
 
 	<@liferay.control_menu />
 
-	<#assign preferences=freeMarkerPortletPreferences.getPreferences({"portletSetupPortletDecoratorId": "barebone"
-		, "destination" : "/search" }) />
+	<#assign preferences=freeMarkerPortletPreferences.getPreferences({"portletSetupPortletDecoratorId": "barebone", "destination" : "/search" }) />
 	<div class="container-full position-relative" id="wrapper">
 		<header id="banner" role="banner">
 			<nav class="hheader navbar align-content-between bg-light m-0 p-0 pt-1 pb-1">
@@ -40,7 +39,6 @@
 						</div>
 					</div>
 				</a>
-
 				<div class="d-flex flex-wrap m-0 nav-right align-items-center">
 					<!-- tìm kiếm -->
 					<div class="autofit-col search-bar">
@@ -85,7 +83,6 @@
 								<@liferay.user_personal_bar />
 							</div>
 					</#if>
-
 				</div>
 			</nav>
 
@@ -96,14 +93,11 @@
 
 		<section id="content">
 			<h2 class="hide-accessible sr-only" role="heading" aria-level="1">${the_title}</h2>
-
 			<#if selectable>
 				<@liferay_util["include"] page=content_include />
 				<#else>
 					${portletDisplay.recycle()}
-
 					${portletDisplay.setTitle(the_title)}
-
 					<@liferay_theme["wrap-portlet"] page="portlet.ftl">
 						<@liferay_util["include"] page=content_include />
 						</@>

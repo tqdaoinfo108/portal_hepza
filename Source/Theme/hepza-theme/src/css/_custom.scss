@@ -29,6 +29,8 @@ body {
 /* NAV MENU */
 .hmenu {
     background-color: #ef0000;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .hmenu ul li:hover {
@@ -455,7 +457,6 @@ footer .footer-top li:first-child a {
     gap: ($spacer * .5) !important
 }
 
-
 .hnews .hnews-item {
     flex: 30%;
 
@@ -555,7 +556,7 @@ footer .footer-top li:first-child a {
 
 // Tin tuyển dụng
 .ttd-container {
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    // padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     color: black;
     border-style: dotted;
     border-top: 0;
@@ -563,12 +564,27 @@ footer .footer-top li:first-child a {
     border-right: 0;
     border-width: 1px;
     width: 100%;
+    border-color: lightgray;
+}
+
+.ttd-container :not(:first-child):hover {
+    background-color: #ffecec;
+}
+
+.ttd-container :not(:first-child):hover .button:hover {
+    background-color: #ff0d0d;
+    border-color: #ff0d0d;
+}
+
+.ttd-container .description :hover {
+    background-color: #ffffff;
 }
 
 .ttd-item img {
     width: 140px;
     margin-right: 2rem;
     max-height: 80px;
+    place-self: center;
 }
 
 .ttd-item .title {
@@ -596,12 +612,13 @@ footer .footer-top li:first-child a {
 
 .ttd-item {
     display: inline-flex;
+    padding: 0.5rem;
 }
 
 .ttd-item-detail {
-    display: flex;
-    justify-content: space-between;
-    place-items: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 
@@ -620,6 +637,19 @@ footer .footer-top li:first-child a {
     color: white;
     padding: 0.2rem 0.5rem 0.2rem 0.5rem;
     text-decoration: none;
+    max-width: 120px;
+    place-self: end;
+    margin-right: 8px;
+}
+
+.border-dotted-grey {
+    border: dotted;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    width: 100%;
+    border-width: 1px;
+    border-color: lightgrey;
 }
 
 .text-color-red {
@@ -649,11 +679,11 @@ footer .footer-top li:first-child a {
 }
 
 .change-language {
-    margin-right: 1.5rem;
+    margin-right: 1.0rem;
 }
 
 .banner-image {
-    height: 400px;
+    height: 350px;
     width: 100%;
     object-fit: cover;
 }
@@ -663,10 +693,29 @@ footer .footer-top li:first-child a {
     width: 25%;
 }
 
+.nav .icon {
+    display: none;
+}
+
 /* Các thiết bị cực nhỏ (điện thoại, 600px trở xuống) */
 @media only screen and (max-width: 600px) {
+    .nav .nav-item:not(:first-child) {
+        display: none;
+    }
 
-    html{
+    .nav .nav-item.icon {
+        color: #fff;
+        float: right;
+        display: block;
+        align-self: center;
+    }
+
+    .hmenu {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    html {
         overflow-x: hidden;
     }
 
