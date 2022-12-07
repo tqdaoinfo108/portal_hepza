@@ -175,98 +175,93 @@ footer .footer-top li:first-child a {
  * Contenedor Principal - Chuyen muc
  ===========================*/
 
-.accordion {
+ #navigation {
     width: 100%;
-    background: #FFF;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+    font-size: 13px;
 }
 
-.accordion .link {
+#navigation ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.top-level {
+    background: #004aa8;
+}
+
+ul.main-level{
+    background: #004aa8;
+}
+
+#navigation li {
+    list-style: none;
+}
+
+ul.top-level li {
+    border-width: 0px;
+}
+
+#navigation a {
+    color: #fff;
     cursor: pointer;
     display: block;
-    padding: 15px 15px 15px 15px;
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    border-bottom: 1px solid #CCC;
-    position: relative;
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    background-color: blue;
-}
-
-.accordion li:last-child .link {
-    border-bottom: 0;
-}
-
-.accordion li i {
-    position: absolute;
-    top: 16px;
-    left: 12px;
-    font-size: 18px;
-    color: white;
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-}
-
-.accordion li i.fa-chevron-down {
-    right: 12px;
-    left: auto;
-    font-size: 16px;
-}
-
-.accordion li.open .link {
-    color: white;
-}
-
-.accordion li.open i {
-    color: white;
-}
-
-.accordion li.open i.fa-chevron-down {
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
-.accordion li.default .submenu {
-    display: block;
-}
-
-/**
- * Submenu
- -----------------------------*/
-.submenu {
-    display: none;
-    background: black;
-    font-size: 14px;
-}
-
-.submenu li {
-    /* some thing */
-}
-
-.submenu a {
-    display: block;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: 25px;
+    text-indent: 10px;
     text-decoration: none;
-    color: #d9d9d9;
-    padding-left: 42px;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
+    width: 100%;
 }
 
-.submenu a:hover {
-    background: gray;
-    color: #FFF;
+#navigation .main-level .sub-main-level a{
+    padding-left: 24px;
+    background-color: #003881;
 }
+
+
+#navigation .main-level .sub-main-level a:hover {
+    background: #d40000;
+    position: relative;
+}
+
+#navigation .main-level .sub-main-level li:hover {
+    background: #d40000;
+    position: relative;
+}
+
+ul.sub-level {
+    display: none;
+}
+
+#navigation .main-level .sub-main-level li:hover .sub-level{
+    /* background: #999; */
+    border: #fff solid;
+    border-width: 1px;
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: -1px;
+    z-index: 9999;
+}
+
+ul.sub-level li {
+    border: none;
+    float: left;
+    width: 16rem;
+}
+
+#navigation .sub-level {
+    background: gray;
+}
+
+#navigation .sub-level .sub-level {
+    background: gray;
+}
+
+
+/** =======================
+ * Contenedor Principal - Chuyen muc
+ ===========================*/
 
 .hside-bar .title {
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(62, 62, 223, 1) 100%);
@@ -777,6 +772,10 @@ footer .footer-top li:first-child a {
         text-align: start;
     }
 
+    .hcategories{
+        display: none;
+    }
+
     footer .background {
         padding-left: 0;
         padding-right: 0;
@@ -805,10 +804,18 @@ footer .footer-top li:first-child a {
 }
 
 /* Thiết bị nhỏ (máy tính bảng dọc và điện thoại lớn, 600px trở lên) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    .hcategories{
+        display: none;
+    }
+}
 
 /* Thiết bị trung bình (máy tính bảng ngang, 768px trở lên) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .hcategories{
+        display: none;
+    }
+}
 
 /* Thiết bị lớn (máy tính xách tay / máy tính để bàn, 992px trở lên) */
 @media only screen and (min-width: 992px) {}
