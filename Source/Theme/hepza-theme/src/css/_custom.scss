@@ -692,6 +692,19 @@ ul.sub-level li {
     display: none;
 }
 
+.pagination {
+    border-radius: 0.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+    gap: 24px;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 10px;
+}
 /* Các thiết bị cực nhỏ (điện thoại, 600px trở xuống) */
 @media only screen and (max-width: 600px) {
     .nav .nav-item:not(:first-child) {
@@ -805,16 +818,12 @@ ul.sub-level li {
 
 /* Thiết bị nhỏ (máy tính bảng dọc và điện thoại lớn, 600px trở lên) */
 @media only screen and (min-width: 600px) {
-    .hcategories{
-        display: none;
-    }
+   
 }
 
 /* Thiết bị trung bình (máy tính bảng ngang, 768px trở lên) */
 @media only screen and (min-width: 768px) {
-    .hcategories{
-        display: none;
-    }
+   
 }
 
 /* Thiết bị lớn (máy tính xách tay / máy tính để bàn, 992px trở lên) */

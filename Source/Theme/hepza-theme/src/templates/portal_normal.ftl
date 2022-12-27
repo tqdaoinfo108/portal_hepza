@@ -16,6 +16,7 @@
 	<script data-senna-off="true" src="${javascript_folder}/owl.carousel.min.js" type="text/javascript"></script>
 	<script data-senna-off="true" src="${javascript_folder}/toggle-control-menu.js" type="text/javascript"></script>
 	<script data-senna-off="true" src="${javascript_folder}/custom.js" type="text/javascript"></script>
+	<script data-senna-off="true" src="${javascript_folder}/datatables.min.js" type="text/javascript"></script>
 
 </head>
 
