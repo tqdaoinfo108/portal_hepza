@@ -17,6 +17,9 @@
 	<script data-senna-off="true" src="${javascript_folder}/toggle-control-menu.js" type="text/javascript"></script>
 	<script data-senna-off="true" src="${javascript_folder}/custom.js" type="text/javascript"></script>
 	<script data-senna-off="true" src="${javascript_folder}/datatables.min.js" type="text/javascript"></script>
+	<script data-senna-off="true" src="${javascript_folder}/dataTables.responsive.min.js" type="text/javascript"></script>
+	<script data-senna-off="true" src="${javascript_folder}/dataTables.searchPanes.min.js" type="text/javascript"></script>
+	<script data-senna-off="true" src="${javascript_folder}/dataTables.select.min.js" type="text/javascript"></script>
 
 </head>
 
@@ -27,7 +30,6 @@
 
 	<@liferay.control_menu />
 
-	<#assign preferences=freeMarkerPortletPreferences.getPreferences({"portletSetupPortletDecoratorId": "barebone", "destination" : "/search" }) />
 	<div class="container-full position-relative" id="wrapper">
 		<header id="banner" role="banner">
 			<nav class="hheader navbar align-content-between bg-light m-0 p-0 pt-1 pb-1">
@@ -35,14 +37,15 @@
 					<div class="d-flex flex-row align-content-between ">
 						<img src="${site_logo}" width="48px" alt="" />
 						<div class="d-flex flex-column align-self-center">
-							<p class="pb-2">CỔNG THÔNG TIN ĐIỆN TỬ</p>
-							<p class="sub-title-navbrand">BAN QUẢN LÝ KHU CHẾ XUẤT & CÔNG NGHIỆP TP.HCM</p>
+							<p class="pb-2">BAN QUẢN LÝ</p>
+							<p class="sub-title-navbrand">CÁC KHU CHẾ XUẤT VÀ CÔNG NGHIỆP TP.HCM</p>
 						</div>
 					</div>
 				</a>
 				<div class="d-flex flex-wrap m-0 nav-right align-items-center">
 					<!-- tìm kiếm -->
 					<div class="autofit-col search-bar">
+						<#assign preferences=freeMarkerPortletPreferences.getPreferences({"portletSetupPortletDecoratorId": "barebone", "destination" : "/search" }) />
 						<@liferay.search_bar default_preferences="${preferences}" />
 					</div>
 
@@ -120,8 +123,8 @@
 						<img src="${themeDisplay.getPathThemeImages()}/hepza/logo.png" class="pr-4" height="120px"
 							alt="" srcset="">
 						<div>
-							<p>CỔNG THÔNG TIN ĐIỆN TỬ</p>
-							<p>BAN QUẢN LÝ KHU CHẾ XUẤT & CÔNG NGHIỆP TP.HCM</p>
+							<p>BAN QUẢN LÝ</p>
+							<p>CÁC KHU CHẾ XUẤT VÀ CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</p>
 							<p>Địa chỉ: 35 Nguyễn Bỉnh Khiêm, Phường Đa Kao, Quận 1, TP.HCM</p>
 							<p>Tel. 84-28.38290.414 - 38290.405, FAX: 84-28.38294.271</p>
 							<p>Email: hepza@tphcm.gov.vn</p>
@@ -135,7 +138,7 @@
 							href="https://www.maps.ie/distance-area-calculator.html"></a></iframe></div>
 			</div>
 			<div class="background-bottom">
-				<p>@ 2022 Bản quyền thuộc về BQL CÁC KHU CHẾ XUẤT VÀ CÔNG NGHIỆP TP.HCM</p>
+				<p>@ 2022 Bản quyền thuộc về BAN QUẢN LÝ CÁC KHU CHẾ XUẤT VÀ CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</p>
 			</div>
 		</footer>
 	</div>

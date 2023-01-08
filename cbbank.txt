@@ -1,0 +1,15 @@
+POST /Account/Login HTTP/1.1
+Host: cborm.cbbank.vn
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+Content-Length: 37
+Origin: http://cborm.cbbank.vn
+Connection: close
+Referer: http://cborm.cbbank.vn/
+Cookie: DATA_ORM=%7B%22UserId%22%3A%22280d2252-3af8-48f5-911c-1d54236548a2%22%2C%22Code%22%3A%229999%22%2C%22LoginName%22%3A%22baolq%22%2C%22FullName%22%3A%22L%C3%AA%20Qu%E1%BB%91c%20B%E1%BA%A3o%22%2C%22Email%22%3A%22baolq%40hpt.vn%22%2C%22IsLeader%22%3Afalse%2C%22isHO%22%3Atrue%2C%22status%22%3Atrue%2C%22Image%22%3A%22%22%2C%22DepartmentId%22%3A%22fb5ab405-888a-4a80-a6fe-6734e1f12de5%22%2C%22DepartmentCode%22%3A%22QLRRH%C4%90%22%2C%22DepartmentName%22%3A%22Ban%20Qu%E1%BA%A3n%20l%C3%BD%20r%E1%BB%A7i%20ro%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng%22%2C%22BranchId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22BranchCode%22%3A%22HO%22%2C%22BranchName%22%3A%22H%E1%BB%99i%20s%E1%BB%9F%22%2C%22GraldelLevelId%22%3A%220b70da75-340b-4b6c-9d53-060999404950%22%2C%22GraldelLevelCode%22%3A%22RRO%22%2C%22GraldelLevelName%22%3A%22Kh%E1%BB%91i%20Qu%E1%BA%A3n%20l%C3%BD%20r%E1%BB%A7i%20ro%22%2C%22PositionId%22%3A%225da22ea6-6da2-4429-a002-7ba7dcf5425f%22%2C%22PositionCode%22%3A%22RR04.07%22%2C%22PositionName%22%3A%22Chuy%C3%AAn%20vi%C3%AAn%22%2C%22DanhSachKiemNhiem%22%3A%22%5B%5D%22%2C%22Permissions%22%3A%22%22%2C%22IsChangePassword%22%3Afalse%2C%22IsPasswordAdmin%22%3Afalse%7D; Login=false
+
+username=baolq&password=P%40ssWord123
